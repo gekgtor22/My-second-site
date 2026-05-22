@@ -2,134 +2,38 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Моя первая страница</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #f0f0f0;
-        }
-
-        .menu {
-            background: #333;
-            padding: 15px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-        }
-
-        .menu a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 5px;
-            display: inline-block;
-        }
-
-        .menu a:hover {
-            background: #555;
-            border-radius: 5px;
-        }
-
-        .block {
-            background: white;
-            margin: 30px auto;
-            padding: 30px;
-            width: 80%;
-            max-width: 900px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        .block h2 {
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        .image {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            border-radius: 10px;
-            margin: 15px 0;
-        }
-
-        .btn {
-            background: #007bff;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            display: inline-block;
-            border-radius: 5px;
-            margin-top: 10px;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn:hover {
-            background: #0056b3;
-        }
-
-        .footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 30px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Lines Studio — Архитектура и дизайн интерьера</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="header">
+        <a href="index.html" class="logo">Urban Lines</a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Главная</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </header>
 
-<div class="menu">
-    <a href="#home">Главная</a>
-    <a href="#about">Обо мне</a>
-    <a href="#gallery">Галерея</a>
-    <a href="#contact">Контакты</a>
-    <a href="#" onclick="openNewPage()">???</a>
-</div>
+    <section class="hero">
+        <div class="hero-left">
+            <h1>Urban<br>Lines</h1>
+            <p class="subtitle">Архитектура и дизайн интерьера — создаём пространства, в которых хочется жить</p>
+            <a href="portfolio.html" class="btn">Смотреть проекты</a>
+        </div>
+        <div class="hero-right" id="hero-slider"></div>
+    </section>
 
-<div id="home" class="block">
-    <h2>Добро пожаловать!</h2>
-    <p>Это моя первая страница.</p>
-</div>
+    <footer class="footer">
+        © 2025 Urban Lines Studio. Все права защищены.
+    </footer>
 
-<div id="about" class="block">
-    <h2>Обо мне</h2>
-    <p>Меня зовут Максим. Я начинающий веб-разработчик. Люблю создавать сайты и учиться новому.</p>
-</div>
-
-
-
-<div id="contact" class="block">
-    <h2>Связь со мной</h2>
-    <p>Email: msyuzyumov@yandex.ru</p>
-
-<script>
-    function openNewPage() {
-        window.open('about:blank', '_blank').document.write(`
-            <!DOCTYPE html>
-            <html>
-            <head><title>Секрет</title>
-            <style>
-                body { font-family: Arial; text-align: center; padding: 50px; background: #f0f0f0; }
-                h1 { color: #333; }
-                .back { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-top: 20px; }
-            </style>
-            </head>
-            <body>
-                <h1>Смешная картинка</h1>
-          <img src="https://i.pinimg.com/736x/67/fc/a7/67fca7de6b84433c5b65d46a6742d096.jpg" style="border-radius:10px">
-            </body>
-            </html>
-        `);
-    }
-</script>
-    
+    <script src="script.js"></script>
 </body>
 </html>
