@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — Urban Lines Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Urban Lines</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="contacts.html" class="active">Контакты</a></li>
+        </ul>
+    </header>
+
+    <main class="container">
+        <h2>Контакты</h2>
+        <div class="contacts-container">
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Телефон" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Сообщение (необязательно)"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+                <p id="form-message" style="margin-top: 15px; display: none; color: green;">Спасибо! Мы свяжемся с вами.</p>
+            </div>
+            <div class="contact-info">
+                <div class="social-links">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        © 2025 Urban Lines Studio. Все права защищены.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
